@@ -1,0 +1,75 @@
+footer {
+    padding: 7.9rem 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.footer-content .circle{
+    margin: 2.4rem 0;
+}
+
+.footer-content-about {
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about p {
+    line-height: 2;
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.social-icons img {
+    font-size: 2rem;
+    color: #3bcc75;
+    padding: .8rem 2rem;
+}
+
+.social-icons img:hover,
+.social-icons img:focus {
+    color: #ffc845;
+}
+
+.news-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.news-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+.news-btn {
+    background: transparent;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px .6rem;
+    position: absolute;
+    top: 30%;
+    margin-left: 20.5rem;
+}
