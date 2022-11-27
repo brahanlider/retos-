@@ -1,12 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shoes</title>
+  <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/img/">
+
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 </head>
-<body>
-    asdasdasd
+
+<body class="body">
+  <header class="header">
+    <nav class="nav" id="header-nav">
+      <div class="container f-elements f-elements--header p-relative">
+        <a href="#hero">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiX9i0dH3YvpTWucqJQDOD2YcWh2y4G07U7P0JhpWFa7KAaqWsTDocQQKaFdlmJPRZjKQ&usqp=CAU"
+            alt="Logo Elliot Garamendi" width="48" height="48" class="nav__logo" />
+        </a>
+        <a href="#header-nav" class="nav__icon nav__icon--menu">
+          <i class="bi bi-list"></i>
+        </a>
+        <a href="#header-close" class="nav__icon nav__icon--close">
+          <i class="bi bi-x-circle"></i>
+        </a>
+        <ul class="list list--header f-elements f-elements--center f-elements--responsive gap-md">
+          <li>
+            <a href="#hero" class="list__link">Inicio</a>
+          </li>
+          <li>
+            <a href="#projects" class="list__link">Tienda</a>
+          </li>
+          <li>
+            <a href="#experiences" class="list__link">SobreCD</a>
+          </li>
+          <li>
+            <a href="#contact" class="list__link">Servicio al cliente</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <article id="hero" class="section hero f-elements f-elements--center">
+      <div class="container g-elements g-elements--responsive g-elements--center gap-lg">
+        <div class="card f-elements f-direction-column">
+          <header class="card__header">
+            <h1 class="card__title">🌌 Los mejores calzados 🌌</h1>
+          </header>
+          <section class="card__body">
+            <h2 class="card__subtitle">Cambia tu estilo, cambia tu vida.</h2>
+            <p class="card__text d-none md:d-block">
+              Porque tus pies también necesitan vestir a la medida, comprar calzados siempre será una opción divertida
+            </p>
+          </section>
+          <footer class="card__footer">
+            <div class="f-elements f-elements--center gap-sm">
+              <a href="https://1drv.ms/u/s!As5U-bd3F-a6gYsmbbG-Dybk88biRQ?e=7q73aZ" target="_blank"
+                rel="noopener noreferrer" class="button button--primary">Comprar Ahora</a>
+            </div>
+          </footer>
+        </div>
+        <div class="hero__img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST3pHJtcyNrz3unSpOV2iAK0W7yKH6168uoQ&usqp=CAU"
+            alt="Elliot Garamendi" width="256" class="hero__primary-img" />
+          <figure class="hero__decorators">
+            <img
+              src="https://img.freepik.com/vector-premium/2x1-pegatina-comercial-roja-mitad-precio_123447-1008.jpg?w=2000"
+              alt="HTML" width="64" height="64" class="hero__decorator" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZfgKyiCk8IE-n5LShVwzgRXhA835e3I4aQg&usqp=CAU"
+              alt="CSS" width="64" height="64" class="hero__decorator" />
+            <img src="https://thumbs.dreamstime.com/b/oferta-especial-de-la-navidad-47514733.jpg" alt="JavaScript"
+              width="64" height="64" class="hero__decorator" />
+            <img
+              src="https://fotografias.lasexta.com/clipping/cmsimages01/2021/11/26/DF11239B-589F-4DDF-9991-3AF25AA9A832/98.jpg?crop=2121,1193,x0,y112&width=1900&height=1069&optimize=high&format=webply"
+              alt="React" width="64" height="64" class="hero__decorator" />
+          </figure>
+        </div>
+      </div>
+    </article>
+    <section>
+      <div class="contenedor">
+        <div>
+          <h2 class="subtitulo-1">Hombre</h2>
+          <img class="img-1"
+            src="https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-ES-Site/Library-Sites-LacosteContent/es/dw80408c55/fw22/plp-header/2-CH2/R2/plp-header-homme-sneakers-44SMA0127-21G-desk.jpg?imwidth=915&impolicy=custom"
+            alt="">
+        </div>
+        <div>
+          <h2 class="subtitulo-2">Mujer</h2>
+          <img class="img-2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqM1phYSdYWnFWCRntZXJy3I-AHuMjBpkGA&usqp=CAU"
+            alt="">
+        </div>
+        <div>
+          <h2 class="subtitulo-3">Niño</h2>
+          <img class="img-3"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdi8ScDakUA0xrOLSlylsTq-Ra10uXgSJbL5p9jG6JLxG2ilvFh8nhUgvvyDxmq5QE2i0&usqp=CAU"
+            alt="">
+        </div>
+  </main>
+  <footer>
+    <div class="foo-container">
+      <div class="footer-content">
+
+        <div class="footer-content-about">
+          <h4>Nosotros</h4>
+          <div class="circle">
+            <i class="fas fa-circle"></i>
+          </div>
+          <p>Visitanos en nuestras páginas y redes sociales para que puedas obtener mas información del producto, también habra descuentos, promociones y mucho mas para todos nuestros clientes que confian en nosotros.</p>
+        </div>
+        <div class="footer-div">
+          <div class="social-media">
+            <h4>Siguenos</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.instagram.com/">
+                  <img src="./assets/img/instagram.svg" alt="Instagram" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/feed/">
+                  <img src="./assets/img/linkedin.svg" alt="Linkedin" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/">
+                  <img src="./assets/img/facebook.svg" alt="facebook" width="24" height="24">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/">
+                  <img src="./assets/img/youtube.svg" alt="youtube" width="24" height="24">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Noticias</h4>
+            <form action="" class="news-form">
+              <input type="text" class="news-input" placeholder="Escribe tu email">
+              <button class="news-btn" type="submit">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    const selectElement = function (element) {
+      return document.querySelector(element);
+    }
+
+
+    let menuToggle = selectElement('.menu-toggle');
+    let body = selectElement('body');
+
+    menuToggle.addEventListener('click', function () {
+      body.classList.toggle('open');
+    })
+
+  </script>
+
+
 </body>
+
+</html>
+</body>
+
 </html>
